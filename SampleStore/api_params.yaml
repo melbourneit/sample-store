@@ -2,20 +2,20 @@ environments:
   - name: dev
     endpoints:
       production:
-        url: http://dev.apim.wso2.com:9090
+        url: http://dev.apim.wso2.com:9090/samplestore
         config:
           retryTimeOut: $RETRY
       sandbox:
-        url: http://dev.sandbox.apim.wso2.com:9090
+        url: http://dev.sandbox.apim.wso2.com:9090/samplestore
         config:
           retryTimeOut: $RETRY        
   - name: prod
     endpoints:
       production:
-        url: http://prod.apim.wso2.com:9090
+        url: http://prod.apim.wso2.com:9090/samplestore
         config:
           retryTimeOut: $RETRY      
       sandbox:
-        url: http://prod.sandbox.apim.wso2.com:9090
+        url: http://prod.sandbox.apim.wso2.com:9090/samplestore
         config:
           retryTimeOut: $RETRY      
