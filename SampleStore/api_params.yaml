@@ -1,0 +1,21 @@
+environments:
+  - name: dev
+    endpoints:
+      production:
+        url: https://dev.apim.wso2.com:9090
+        config:
+          retryTimeOut: $RETRY
+      sandbox:
+        url: https://dev.sandbox.apim.wso2.com:9090
+        config:
+          retryTimeOut: $RETRY        
+  - name: prod
+    endpoints:
+      production:
+        url: https://prod.apim.wso2.com:9090
+        config:
+          retryTimeOut: $RETRY      
+      sandbox:
+        url: https://prod.sandbox.apim.wso2.com:9090
+        config:
+          retryTimeOut: $RETRY      
