@@ -9,8 +9,9 @@ context: /samplestore/1.0.0
 contextTemplate: /samplestore/{version}
 tags:
  - online-store
+ - store
 documents: []
-lastUpdated: Dec 11, 2019 3:00:40 PM
+lastUpdated: Dec 11, 2019 3:08:55 PM
 availableTiers:
  -
   name: Bronze
