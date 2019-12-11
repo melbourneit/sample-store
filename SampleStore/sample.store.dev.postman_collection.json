@@ -50,12 +50,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"callbackUrl\": \"www.google.lk\",\n        \"clientName\": \"rest_api_store\",\n        \"owner\": \"admin\",\n        \"grantType\": \"password refresh_token\",\n        \"saasApp\": true\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n        \"callbackUrl\": \"www.google.lk\",\n        \"clientName\": \"rest_api_store\",\n        \"owner\": \"admin\",\n        \"grantType\": \"password refresh_token\",\n        \"saasApp\": true\n}"
 						},
 						"url": {
 							"raw": "https://dev.apim.wso2.com/client-registration/v0.15/register",
@@ -298,12 +293,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"validityTime\": \"3600\",\n  \"keyType\": \"SANDBOX\",\n  \"scopes\": [ \"am_application_scope\", \"default\" ],\n  \"grantTypesToBeSupported\": [ \"client_credentials\", \"password\" ]\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n  \"validityTime\": \"3600\",\n  \"keyType\": \"SANDBOX\",\n  \"scopes\": [ \"am_application_scope\", \"default\" ],\n  \"grantTypesToBeSupported\": [ \"client_credentials\", \"password\" ]\n}"
 						},
 						"url": {
 							"raw": "https://dev.apim.wso2.com/api/am/store/v1.0/applications/{{sample_application_id}}/generate-keys",
@@ -439,12 +429,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"apiId\":\"{{samplestore_api_id}}\",\n\"applicationId\":\"{{sample_application_id}}\",\n\"throttlingPolicy\":\"Unlimited\",\n\"type\":\"API\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\"apiId\":\"{{samplestore_api_id}}\",\n\"applicationId\":\"{{sample_application_id}}\",\n\"throttlingPolicy\":\"Unlimited\",\n\"type\":\"API\"\n}"
 						},
 						"url": {
 							"raw": "https://dev.apim.wso2.com/api/am/store/v1.0/subscriptions",
@@ -893,8 +878,10 @@
 							],
 							"variable": [
 								{
+									"id": "655e22f4-f19a-4677-a1aa-8cc32047827a",
 									"key": "productId",
-									"value": "{{newly_added_product_id}}"
+									"value": "{{newly_added_product_id}}",
+									"type": "string"
 								}
 							]
 						},
@@ -1032,11 +1019,33 @@
 			"protocolProfileBehavior": {}
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5f46ae04-4c21-4dce-87b9-ebdaad51fea0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "377431b6-8c79-423c-84bb-fd9f76ce95b7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "baseUrl",
+			"id": "fb86e45d-f279-4597-8341-97790f24593a",
 			"key": "baseUrl",
-			"value": "https://dev.apim.wso2.com:8243/SampleStore/1.0.0",
+			"value": "https://dev.apim.wso2.com:8243/samplestore/1.0.0",
 			"type": "string"
 		}
 	],
