@@ -1,3 +1,3 @@
-# sample-store
-WSO2 APIM CICD SampleStore Demo
+# sample-store 
+WSO2 APIM CICD SampleStore Demo - update
 
