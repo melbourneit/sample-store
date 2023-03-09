@@ -6,7 +6,7 @@ uuid: c318b6ad-2993-4c67-801d-b2c27c151ab2
 description: This is a sample server online store
 type: HTTP
 context: /MyAPI/1.0.0
-contextTemplate: /SampleStore/{version}
+contextTemplate: /MyAPI/1.0.0
 tags: []
 documents: []
 lastUpdated: Dec 12, 2019 11:12:13 PM
